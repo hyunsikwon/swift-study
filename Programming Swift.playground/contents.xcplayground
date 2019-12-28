@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='Challenge - Tuples'/>
+        <page name='Challenge - Booleans'/>
+        <page name='Challenge - While'/>
+        <page name='Challenge - For Loops'/>
+        <page name='Challenge - Switch'/>
+        <page name='Enummeration'/>
+        <page name='Challenge - Funtions'/>
+        <page name='Challenge - Optional_Intro'/>
+        <page name='Challenge - Optional_more'/>
+        <page name='Challenge - Arrays'/>
+        <page name='Challenge - Dictionaires'/>
+        <page name='Challenge - Closures'/>
+        <page name='Challenge - Structure'/>
+        <page name='Challenge - Properties'/>
+        <page name='Challenge - Methods'/>
+        <page name='Challenge - Classes vs Structures'/>
+        <page name='Challenge - Initializers'/>
+    </pages>
+</playground>
