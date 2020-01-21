@@ -62,8 +62,8 @@ perform(closure: c)
 // 클로저 c에서 str = iOS가 되어서 Hello iOS! return
 
 let product = [
-"iMac Pro", "Macbook Pro", "MacBook Air",
-"iMac", "iPad", "iPad Pro", "apple watch"
+    "iMac Pro", "Macbook Pro", "MacBook Air",
+    "iMac", "iPad", "iPad Pro", "apple watch"
 ]
 
 var proProduct = product.filter { (name : String) -> Bool in
@@ -76,3 +76,30 @@ proProduct.sort(by: {(a : String, b: String) -> Bool in
     return a.caseInsensitiveCompare(b) == .orderedAscending
 })
 print(proProduct)
+
+struct Track {
+    var trackNumber: Int
+    var trackName: String
+    var starRating: Int
+}
+
+let tracks = [
+    Track(trackNumber: 4, trackName: "Hello", starRating: 3),
+    Track(trackNumber: 3, trackName: "A-yo", starRating: 4),
+    Track(trackNumber: 1, trackName: "Bye", starRating: 3)
+]
+
+//let sortedTrack = tracks.sorted { (track1, track2) -> Bool in
+//    return track1.trackName < track2.trackName
+//}
+
+//let sortedTrack = tracks.sorted { (t1, t2) in
+//    return t1.trackName < t2.trackName
+//}
+
+let sortedTrack = tracks.sorted { return $0.trackName < $1.trackName}
+
+for track in sortedTrack {
+    print(track)
+    
+}
