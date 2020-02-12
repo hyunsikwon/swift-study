@@ -9,3 +9,22 @@ func makeIncrementer(forIncrement amount: Int) -> () -> Int {
     }
     return incrementer
 }
+
+
+let incrementByTen = makeIncrementer(forIncrement: 10)
+
+incrementByTen()
+incrementByTen()
+incrementByTen()
+incrementByTen()
+
+let incrementBySeven = makeIncrementer(forIncrement: 7)
+
+incrementBySeven()
+incrementBySeven()
+
+incrementByTen()
+
+let alsoIncrementByTen = incrementByTen
+
+alsoIncrementByTen()
