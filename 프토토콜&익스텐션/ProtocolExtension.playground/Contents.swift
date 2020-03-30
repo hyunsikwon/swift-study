@@ -98,6 +98,18 @@ class Mail : Sendable, Reciveable{
 }
 
 
+let myPhoneMessage: Message = Message()
+let yourPhoneMessage: Message = Message()
+
+myPhoneMessage.send(data: "Hello")
+myPhoneMessage.to = yourPhoneMessage
+
+myPhoneMessage.send(data: "Hello")
+
+Message.isSendableInstance("Hello")
+Message.isSendableInstance(myPhoneMessage)
+Message.isSendableInstance(yourPhoneMessage)
+
 protocol Resettable {
     mutating func reset()
 }
@@ -155,7 +167,7 @@ class School {
 class MiddleSchool : School, Named {
     // Named를 채택하지 않은 School을 상속받아 initializer을 override하고 Named를 채택하였기 때문에 required도 만족해야함
     override required init(name : String){
-        super.init(name: <#T##String#>)
+        super.init(name: name)
     }
 }
 
